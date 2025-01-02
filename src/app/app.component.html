@@ -1,1 +1,82 @@
-<h1> Hello</h1>
+<div class="row">
+    <div class="col8">
+        <div class="card">
+            <div class="card-header bg-success">
+                <h6>Employee List</h6>
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-12">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Sr No</th>
+                                    <th>Name</th>
+                                    <th>Contact</th>
+                                    <th>Email-Id</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-4">
+        <div class="card">
+            <div class="card-header bg-success">
+                New Employee
+            </div>
+            <div class="card-body">
+                <form [formGroup]="employeeForm">
+                    <div class="row">
+                        <div class="col-6">
+                            <label for="">Name</label>
+                            <input type="text" formControlName="name" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">City</label>
+                            <input type="text" formControlName="city" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">State</label>
+                            <input type="text" formControlName="state" class="form-control">
+                        </div>
+
+                        <div class="col-6">
+                            <label for="">Contact No</label>
+                            <input type="text" formControlName="contactNo" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Email-Id</label>
+                            <input type="text" formControlName="emailId" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Emp Id</label>
+                            <input type="text" formControlName="empId" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Pin Code</label>
+                            <input type="text" formControlName="pinCode" class="form-control">
+                        </div>
+                        <div class="col-6">
+                            <label for="">Address</label>
+                            <textarea formControlName="address" class="form-control"></textarea>
+                        </div>
+                    </div>
+                    <div class="row" pt="2">
+                        <div class="col-6 text-center">
+                            <button class="btn btn-secondary">Reset</button>
+                        </div>
+                        <div class="col-6 text-center">
+                            <button class="btn btn-secondary">Save Employee</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
